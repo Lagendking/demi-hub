@@ -10,6 +10,9 @@ elseif game.PlaceId == 10325366821 then
 elseif game.PlaceId == 8585657145 then
 
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games/Anime-Hero-Sim.lua"))()
+elseif game.PlaceId == 662417684 then
+
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games/Luck-Block.lua"))()
 else
 
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games.lua"))()
