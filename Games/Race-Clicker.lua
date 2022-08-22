@@ -24,14 +24,6 @@ local Tab1 = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Tab2 = Window:MakeTab({
-	Name = "Credits",
-	Icon = "rbxassetid://6022668888",
-	PremiumOnly = false
-})
-
-Tab2:AddParagraph("                                             Credits", string.format("\nRace Clicker Script: Lagend#4320 \nDemi Hub: Streamy#1480, Lagend#4320"))
-
 Tab:AddToggle({
 	Name = "Win",
 	Default = false,
