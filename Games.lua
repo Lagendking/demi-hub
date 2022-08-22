@@ -22,6 +22,16 @@ local gameName_3 = Instance.new("TextLabel")
 local Join_3 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UICorner_7 = Instance.new("UICorner")
+local LBB = Instance.new("ImageButton")
+local gameName_4 = Instance.new("TextLabel")
+local Join_4 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
+local AHS = Instance.new("ImageButton")
+local gameName_5 = Instance.new("TextLabel")
+local Join_5 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -77,7 +87,7 @@ UIGridLayout.Parent = Games
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout.CellPadding = UDim2.new(0, 25, 0, 22)
 UIGridLayout.CellSize = UDim2.new(0, 150, 0, 150)
-UIGridLayout.FillDirectionMaxCells = 100
+UIGridLayout.FillDirectionMaxCells = 3
 
 TLX.Name = "TLX"
 TLX.Parent = Games
@@ -190,14 +200,89 @@ UICorner_6.Parent = Join_3
 
 UICorner_7.Parent = RC
 
-local function SQLJ_fake_script()
+LBB.Name = "LBB"
+LBB.Parent = Games
+LBB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LBB.Size = UDim2.new(0, 100, 0, 100)
+LBB.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+gameName_4.Name = "gameName"
+gameName_4.Parent = LBB
+gameName_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gameName_4.BackgroundTransparency = 1.000
+gameName_4.Size = UDim2.new(0, 150, 0, 29)
+gameName_4.Font = Enum.Font.SourceSansBold
+gameName_4.Text = "Lucky Blocks"
+gameName_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+gameName_4.TextScaled = true
+gameName_4.TextSize = 14.000
+gameName_4.TextStrokeTransparency = 0.600
+gameName_4.TextWrapped = true
+
+Join_4.Name = "Join"
+Join_4.Parent = LBB
+Join_4.BackgroundColor3 = Color3.fromRGB(64, 255, 6)
+Join_4.BorderSizePixel = 2
+Join_4.Position = UDim2.new(0.0933333337, 0, 0.726666689, 0)
+Join_4.Size = UDim2.new(0, 121, 0, 31)
+Join_4.Font = Enum.Font.SourceSansBold
+Join_4.Text = "Play Game"
+Join_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Join_4.TextScaled = true
+Join_4.TextSize = 14.000
+Join_4.TextStrokeTransparency = 0.700
+Join_4.TextWrapped = true
+
+UICorner_8.Parent = Join_4
+
+UICorner_9.Parent = LBB
+
+AHS.Name = "AHS"
+AHS.Parent = Games
+AHS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AHS.Size = UDim2.new(0, 100, 0, 100)
+AHS.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+gameName_5.Name = "gameName"
+gameName_5.Parent = AHS
+gameName_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gameName_5.BackgroundTransparency = 1.000
+gameName_5.Size = UDim2.new(0, 150, 0, 29)
+gameName_5.Font = Enum.Font.SourceSansBold
+gameName_5.Text = "Anime Hero Simulator"
+gameName_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+gameName_5.TextScaled = true
+gameName_5.TextSize = 14.000
+gameName_5.TextStrokeTransparency = 0.600
+gameName_5.TextWrapped = true
+
+Join_5.Name = "Join"
+Join_5.Parent = AHS
+Join_5.BackgroundColor3 = Color3.fromRGB(64, 255, 6)
+Join_5.BorderSizePixel = 2
+Join_5.Position = UDim2.new(0.0933333337, 0, 0.726666689, 0)
+Join_5.Size = UDim2.new(0, 121, 0, 31)
+Join_5.Font = Enum.Font.SourceSansBold
+Join_5.Text = "Play Game"
+Join_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Join_5.TextScaled = true
+Join_5.TextSize = 14.000
+Join_5.TextStrokeTransparency = 0.700
+Join_5.TextWrapped = true
+
+UICorner_10.Parent = Join_5
+
+UICorner_11.Parent = AHS
+
+
+local function IAJAOI_fake_script()
 	local script = Instance.new('LocalScript', TLX)
 
 	local placeId = 8750997647
 	script.Parent.Image = "https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..placeId.."&fmt=png&wd=420&ht=420"
 end
-coroutine.wrap(SQLJ_fake_script)()
-local function DJZTHCO_fake_script()
+coroutine.wrap(IAJAOI_fake_script)()
+local function TWIG_fake_script()
 	local script = Instance.new('LocalScript', Join)
 
 	local tps = game:GetService("TeleportService")
@@ -207,15 +292,15 @@ local function DJZTHCO_fake_script()
 		tps:Teleport(placeid, game:GetService("Players").LocalPlayer)
 	end)
 end
-coroutine.wrap(DJZTHCO_fake_script)()
-local function GBQKY_fake_script()
+coroutine.wrap(TWIG_fake_script)()
+local function NZOBD_fake_script()
 	local script = Instance.new('LocalScript', OT)
 
 	local placeId = 10325366821
 	script.Parent.Image = "https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..placeId.."&fmt=png&wd=420&ht=420"
 end
-coroutine.wrap(GBQKY_fake_script)()
-local function NGPYE_fake_script()
+coroutine.wrap(NZOBD_fake_script)()
+local function DRLZUFW_fake_script()
 	local script = Instance.new('LocalScript', Join_2)
 
 	local tps = game:GetService("TeleportService")
@@ -225,15 +310,15 @@ local function NGPYE_fake_script()
 		tps:Teleport(placeid, game:GetService("Players").LocalPlayer)
 	end)
 end
-coroutine.wrap(NGPYE_fake_script)()
-local function OZZTNXL_fake_script() 
+coroutine.wrap(DRLZUFW_fake_script)()
+local function ALSENJ_fake_script()
 	local script = Instance.new('LocalScript', RC)
 
 	local placeId = 9285238704
 	script.Parent.Image = "https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..placeId.."&fmt=png&wd=420&ht=420"
 end
-coroutine.wrap(OZZTNXL_fake_script)()
-local function CSJZA_fake_script()
+coroutine.wrap(ALSENJ_fake_script)()
+local function JSLHPGI_fake_script()
 	local script = Instance.new('LocalScript', Join_3)
 
 	local tps = game:GetService("TeleportService")
@@ -242,4 +327,40 @@ local function CSJZA_fake_script()
 		tps:Teleport(placeid, game:GetService("Players").LocalPlayer)
 	end)
 end
-coroutine.wrap(CSJZA_fake_script)()
+coroutine.wrap(JSLHPGI_fake_script)()
+local function EZTFV_fake_script()
+	local script = Instance.new('LocalScript', LBB)
+
+	local placeId = 662417684
+	script.Parent.Image = "https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..placeId.."&fmt=png&wd=420&ht=420"
+end
+coroutine.wrap(EZTFV_fake_script)()
+local function BAEI_fake_script()
+	local script = Instance.new('LocalScript', Join_4)
+
+	local tps = game:GetService("TeleportService")
+	local placeid = 662417684
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		tps:Teleport(placeid, game:GetService("Players").LocalPlayer)
+	end)
+end
+coroutine.wrap(BAEI_fake_script)()
+local function ATTOID_fake_script()
+	local script = Instance.new('LocalScript', AHS)
+
+	local placeId = 8585657145
+	script.Parent.Image = "https://assetgame.roblox.com/Game/Tools/ThumbnailAsset.ashx?aid="..placeId.."&fmt=png&wd=420&ht=420"
+end
+coroutine.wrap(ATTOID_fake_script)()
+local function YPNI_fake_script()
+	local script = Instance.new('LocalScript', Join_5)
+
+	local tps = game:GetService("TeleportService")
+	local placeid = 8585657145
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		tps:Teleport(placeid, game:GetService("Players").LocalPlayer)
+	end)
+end
+coroutine.wrap(YPNI_fake_script)()
