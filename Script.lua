@@ -7,10 +7,10 @@ elseif game.PlaceId == 9285238704 then
 elseif game.PlaceId == 10325366821 then
   
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games/Oof-Tycoon.lua"))()
-else
+elseif game.PlaceId == 8585657145 then
 
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games/Anime-Hero-Sim.lua"))()
-elseif game.PlaceId == 8585657145 then
+else
 
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games.lua"))()
 end
