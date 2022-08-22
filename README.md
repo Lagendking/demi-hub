@@ -1,2 +1,2 @@
 # demi-hub
-streamy's roblox script hub
+Streamy's & Lagend's Roblox Script Hub
