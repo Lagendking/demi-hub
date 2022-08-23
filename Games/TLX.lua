@@ -10,7 +10,7 @@ getgenv().antiafk = false
 
 
 
-local List = {"K","M","B","T","Qd","Qn","Sx","Sp","O","N","De","Ud","DD","tdD","qdD","QnD","sxD","SpD","OcD","NvD","Vgn","UVg","DVg","TVg","qtV","QnV","SeV","SPG","OVG","NVG","TGN","UTG","DTG"}
+local List = {"K","M","B","T","Qd","Qn","Sx","Sp","Oc","No","De","Ud","DD","tdD","qdD","QnD","sxD","SpD","OcD","NvD","Vgn","UVg","DVg","TVg","qtV","QnV","SeV","SPG","OVG","NVG","TGN","UTG","DTG"}
 function Suffix(Num)
 
 	local ListCount = 0
