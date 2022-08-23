@@ -164,7 +164,7 @@ local Tab1 = Window:MakeTab({
 })
 
 Tab1:AddLabel("Credits")
-Tab1:AddParagraph("                                             Credits", string.format("\nAHS Script: Streamy#1480 \nDemi Hub: Streamy#1480, Lagend#4320"))
+Tab1:AddParagraph("                                             Credits", string.format("Demi Hub: Streamy#1480, Lagend#4320"))
 
 
 --Scripts
