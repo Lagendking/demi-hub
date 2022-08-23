@@ -1,4 +1,4 @@
-------> RCX Script made by Lagend#4320 <------
+------> Script made by Lagend#4320 <------
 
 ------> Values <------
 getgenv().autoTap = false
