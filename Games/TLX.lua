@@ -8,15 +8,39 @@ getgenv().autoVial = false
 getgenv().autoEquip = false
 getgenv().antiafk = false
 
+
+
+local List = {"K","M","B","T","Qd","Qn","Sx","Sp","O","N","De","Ud","DD","tdD","qdD","QnD","sxD","SpD","OcD","NvD","Vgn","UVg","DVg","TVg","qtV","QnV","SeV","SPG","OVG","NVG","TGN","UTG","DTG"}
+function Suffix(Num)
+
+	local ListCount = 0
+
+	while Num / 1000 >= 1 do
+
+		ListCount = ListCount + 1
+
+		Num = Num / 1000
+	end
+
+	if ListCount == 0 then return Num end
+
+	return math.floor(Num*10)/10 ..List[ListCount]
+end
+
+local Mod = require(game:GetService("ReplicatedStorage").Modules.Tables.RebirthTable)
+local Rebirths = {}
+for _, v in next, Mod do
+    table.insert(Rebirths, {Option = {Amount = Suffix(v[2]), Real = v[2]}})
+end
+
+local ROptions = {}
+for _, v in ipairs(Rebirths) do
+    table.insert(ROptions, v["Option"]["Amount"])
+end
+
 local Eggs = {}
 for i, v in pairs(workspace.Eggs:GetChildren()) do
     table.insert(Eggs, v.Name:sub(1, -5))
-end
-
-local Rebirths = {}
-maxRebirths = 43
-for i=1, maxRebirths, 1 do
-    table.insert(Rebirths, i)
 end
 
 game.Players.LocalPlayer.Character.LeftFoot.Touched:Connect(function(hit)
@@ -226,9 +250,16 @@ end
 Tab:AddDropdown({
     Name = "Select Rebirth",
     Default = "Select Rebirth",
-    Options = {unpack(Rebirths)},
+    Options = {unpack(ROptions)},
     Callback = function(Value)
-        Rebirth = Value
+        
+        for i, v in ipairs(Rebirths) do
+            
+            if v["Option"]["Amount"] == Value then
+                
+                Rebirth = i
+            end
+        end
     end    
 })
 
