@@ -13,6 +13,9 @@ elseif game.PlaceId == 8585657145 then
 elseif game.PlaceId == 662417684 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games/Lucky-Blocks.lua"))()
   
+elseif game.PlaceId == 8540346411 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games/Rebirth-Champions.lua"))()
+  
 else
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games.lua"))()
   
