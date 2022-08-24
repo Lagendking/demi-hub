@@ -162,6 +162,7 @@ Tab:AddToggle({
                 wait()
                 
                 game:GetService("ReplicatedStorage").IncreaseTick:FireServer(10)
+		game:GetService("Players").LocalPlayer.PlayerGui.PopupAlerts.Enabled = false
             end
         end)
     end
