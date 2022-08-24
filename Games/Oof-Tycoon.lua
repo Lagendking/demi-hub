@@ -4,6 +4,7 @@ getgenv().autoPrize = false
 getgenv().autoBuy = false
 getgenv().autoUpgrade = false
 getgenv().antiafk = false
+getgenv().autoTick = false
 
 
 local getName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
@@ -145,6 +146,22 @@ Tab:AddToggle({
                 wait(2.5)
                 
                 game:GetService("ReplicatedStorage").GoldenNoob:FireServer()
+            end
+        end)
+    end
+})
+
+Tab:AddToggle({
+    Name = "Increase Tick x10",
+    Default = false,
+    Callback = function(Value)
+        autoTick = Value
+        
+        spawn(function()
+            while autoTick do
+                wait()
+                
+                game:GetService("ReplicatedStorage").IncreaseTick:FireServer(10)
             end
         end)
     end
