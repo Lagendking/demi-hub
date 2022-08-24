@@ -1,7 +1,11 @@
+------> Script made by Lagend#4320 <------
+
+------> Values <------
 getgenv().espM = false
 getgenv().espI = false
 
 
+------> Start <------
 local getName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
 
 print("Demi Hub | ".. getName.Name)
@@ -23,6 +27,7 @@ local Tab3 = Window:MakeTab({
 
 Tab3:AddParagraph("                                             Credits", string.format("\nRainbow Friends Script: Lagend#4320 \nDemi Hub: Streamy#1480, Lagend#4320"))
 
+------> TAB stuff <------
 Tab:AddButton({
 	Name = "Get Items",
 	Callback = function(Value)
