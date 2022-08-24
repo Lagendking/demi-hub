@@ -152,7 +152,7 @@ Tab:AddToggle({
 })
 
 Tab:AddToggle({
-    Name = "Increase Tick x10",
+    Name = "Buy Tick x10",
     Default = false,
     Callback = function(Value)
         autoTick = Value
