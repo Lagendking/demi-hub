@@ -108,7 +108,9 @@ Tab:AddToggle({
                 spawn(function()
                     if plot:FindFirstChild("SuperPrize"):FindFirstChild("TouchPart") then
                         
-                        plot.SuperPrize.TouchPart.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+			firetouchinterest(plot.SuperPrize.TouchPart, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+			wait()
+			firetouchinterest(plot.SuperPrize.TouchPart, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
                     end
                 end)
             end
