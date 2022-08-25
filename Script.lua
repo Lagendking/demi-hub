@@ -18,6 +18,9 @@ elseif game.PlaceId == 8540346411 then
   
 elseif game.PlaceId == 4893679160 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games/Big-Brain-Sim.lua"))()
+  
+elseif game.PlaceId == 2619187362 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games/Super-Power-Fighting-Sim.lua"))()
 
 else
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games.lua"))()
