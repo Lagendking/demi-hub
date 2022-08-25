@@ -17,7 +17,7 @@ elseif game.PlaceId == 8540346411 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games/Rebirth-Champions.lua"))()
   
 elseif game.PlaceId == 4893679160 then
-  loadstring(game:HttpGet("https://github.com/Lagendking/demi-hub/edit/main/Games/Big-Brain-Sim.lua"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games/Big-Brain-Sim.lua"))()
 
 else
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Lagendking/demi-hub/main/Games.lua"))()
