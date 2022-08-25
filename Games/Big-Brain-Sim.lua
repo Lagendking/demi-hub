@@ -36,7 +36,7 @@ local Tab2 = Window:MakeTab({
     PremiumOnly = false
 })
 
-Tab2:AddParagraph("                                             Credits", string.format("\nBBS Script: Streamy#1480, Lagend#4320 \nDemi Hub: Streamy#1480, Lagend#4320"))
+Tab2:AddParagraph("                                             Credits", string.format("\nBBS Script: Streamy#1480 \nDemi Hub: Streamy#1480, Lagend#4320"))
 
 local tool = "Book"
 spawn(function()
