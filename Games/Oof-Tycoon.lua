@@ -5,6 +5,9 @@ getgenv().autoBuy = false
 getgenv().autoUpgrade = false
 getgenv().antiafk = false
 getgenv().autoTick = false
+getgenv().autoSlot1 = false
+getgenv().autoSlot2 = false
+getgenv().autoSlot3 = false
 
 
 local getName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
@@ -120,22 +123,6 @@ Tab:AddToggle({
 })
 
 Tab:AddToggle({
-    Name = "Buy Noobs",
-    Default = false,
-    Callback = function(Value)
-        autoBuy = Value
-        
-        spawn(function()
-            while autoBuy do
-                wait()
-                
-                game:GetService("ReplicatedStorage").PurchaseNoob:FireServer()
-            end
-        end)
-    end
-})
-
-Tab:AddToggle({
     Name = "Upgrade Noobs",
     Default = false,
     Callback = function(Value)
@@ -151,8 +138,28 @@ Tab:AddToggle({
     end
 })
 
+Tab:AddSection({
+    Name = "Buy"
+})
+
 Tab:AddToggle({
-    Name = "Buy Tick x10",
+    Name = "Noobs",
+    Default = false,
+    Callback = function(Value)
+        autoBuy = Value
+        
+        spawn(function()
+            while autoBuy do
+                wait()
+                
+                game:GetService("ReplicatedStorage").PurchaseNoob:FireServer()
+            end
+        end)
+    end
+})
+
+Tab:AddToggle({
+    Name = "Tick x10",
     Default = false,
     Callback = function(Value)
         autoTick = Value
@@ -163,6 +170,58 @@ Tab:AddToggle({
                 
                 game:GetService("ReplicatedStorage").IncreaseTick:FireServer(10)
 		game:GetService("Players").LocalPlayer.PlayerGui.PopupAlerts.Enabled = false
+            end
+        end)
+    end
+})
+
+Tab:AddSection({
+    Name = "Spin"
+})
+
+Tab:AddToggle({
+    Name = "Regular",
+    Default = false,
+    Callback = function(Value)
+        autoSlot1 = Value
+        
+        spawn(function()
+            while autoSlot1 do
+                wait()
+		
+		game:GetService("ReplicatedStorage").SlotMachine:InvokeServer(1)
+            end
+        end)
+    end
+})
+
+Tab:AddToggle({
+    Name = "Rare",
+    Default = false,
+    Callback = function(Value)
+        autoSlot2 = Value
+        
+        spawn(function()
+            while autoSlot2 do
+                wait()
+		
+		game:GetService("ReplicatedStorage").SlotMachine:InvokeServer(2)
+            end
+        end)
+    end
+})
+
+Tab:AddToggle({
+    Name = "Epic",
+    Default = false,
+    Callback = function(Value)
+        autoSlot3 = Value
+        
+        spawn(function()
+            while autoSlot3 do
+                wait()
+		
+		game:GetService("ReplicatedStorage").SlotMachine:InvokeServer(3)
             end
         end)
     end
