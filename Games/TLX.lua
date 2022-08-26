@@ -371,3 +371,4 @@ Tab1:AddBind({
             goldclone:Destroy()
         end
 	end    
+})
