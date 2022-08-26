@@ -34,13 +34,12 @@ Tab:AddToggle({
 		        wait()
 		        
 		        for _, v in ipairs(game:GetService("Workspace").Environment:GetChildren()) do
-		            if not autoWin then game.Players.LocalPlayer.Character:BreakJoints() return end
-		            for _, v2 in pairs(v:GetDescendants()) do
+		            for _, v2 in pairs(v:GetChildren()) do
 		                if not autoWin then game.Players.LocalPlayer.Character:BreakJoints() return end
 		                if v2.Name == "Sign" then
 		                    
 		                    game.Players.LocalPlayer.Character:MoveTo(v2.Position)
-		                    wait(1)
+		                    wait(0.5)
 		                elseif v2.Name == "Roof" then
 		                    
 		                    v2.CanCollide = false
