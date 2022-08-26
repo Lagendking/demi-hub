@@ -39,7 +39,7 @@ Tab:AddToggle({
 		                if not autoWin then game.Players.LocalPlayer.Character:BreakJoints() return end
 		                if v2.Name == "Sign" then
 		                    
-		                    game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(Vector3.new(v2.Position)))
+		                    game.Players.LocalPlayer.Character:MoveTo(v2.Position)
 		                    wait(1)
 		                elseif v2.Name == "Roof" then
 		                    
